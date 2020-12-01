@@ -2,7 +2,7 @@
 name: Feature request
 about: Suggest an idea for this project
 title: ''
-labels: ''
+labels: 'feature-request, status: in-review'
 assignees: DiyanDimitrov
 
 ---
