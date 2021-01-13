@@ -2,6 +2,13 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.3.0
+
+### New features
+- More tabs menu appears when there is not enough space to display all tab headers
+- Hide pane without removing it from the layout using its `hidden` property
+- Header slot properties for tab and unpinned pane - `tabHeaderId` and `unpinnedHeaderId`
+
 ## 1.2.0
 
 ### New features
