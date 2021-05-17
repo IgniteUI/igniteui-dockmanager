@@ -1,6 +1,22 @@
 # Ignite UI Dock Manager Change Log
 
 All notable changes for each version of this project will be documented in this file.
+## 1.4.0
+
+### New features
+- Reorder tabs without creating floating pane
+- Keyboard navigation
+- Pane navigator
+- Enable/disable floating pane resizing
+- Events for floating pane resizing
+
+### Bug fixes
+- Select pane when activated
+- Flyout unpinned pane when activated
+- Error thrown when hosting external popup inside pane
+- Tab selection is lost with nested Dock Manager components
+- Floating pane containing panes with disabled floating and docking cannot be moved
+- Exception thrown when docking floating pane inside empty dock manager
 
 ## 1.3.0
 
