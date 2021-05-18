@@ -1,6 +1,12 @@
 # Ignite UI Dock Manager Change Log
 
 All notable changes for each version of this project will be documented in this file.
+## 1.4.1
+
+### Bug fixes
+- Pane with allowPinning=false placed inside tab group can be unpinned
+- Normalize a maximized pane when navigating away from it via the keyboard
+
 ## 1.4.0
 
 ### New features
