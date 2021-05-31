@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for this project
 title: ''
 labels: 'feature-request, status: in-review'
-assignees: DiyanDimitrov
+assignees: gedinakova
 
 ---
 
