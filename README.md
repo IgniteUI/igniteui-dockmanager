@@ -1,4 +1,5 @@
 # Ignite UI Dock Manager Web Component - from Infragistics
+[![Discord](https://img.shields.io/discord/836634487483269200?logo=discord&logoColor=ffffff)](https://discord.gg/39MjrTRqds)
 
 [Ignite UI Dock Manager Web Component](https://www.infragistics.com/) provides means to manage the layout of your application through panes, allowing your end-users to customize it further by pinning, resizing, moving and hiding panes.
 
