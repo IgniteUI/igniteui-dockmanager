@@ -2,6 +2,14 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.6.0
+
+### New features
+- Customize dock manager panes and tabs [#3](https://github.com/IgniteUI/igniteui-dockmanager/issues/3)
+
+### Bug fixes
+- A floating pane is draggable outside of the page [#14](https://github.com/IgniteUI/igniteui-dockmanager/issues/14)
+
 ## 1.5.0
 
 ### New features
