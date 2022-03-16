@@ -2,6 +2,18 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.7.0
+
+### New features
+- Customizable floating pane header
+- `disabled` property per pane [#23](https://github.com/IgniteUI/igniteui-dockmanager/issues/23)
+- `documentOnly` property which allows content pane to be docked only inside a document host
+- `allowEmpty` property for split and tab group panes which allows displaying empty areas [#18](https://github.com/IgniteUI/igniteui-dockmanager/issues/18)
+- `disableKeyboardNavigation` property on the dock manager [#22](https://github.com/IgniteUI/igniteui-dockmanager/issues/22)
+
+### Bug fixes
+- Docking indicators appear over the currently dragged floating pane
+
 ## 1.6.0
 
 ### New features
@@ -13,7 +25,7 @@ All notable changes for each version of this project will be documented in this 
 ## 1.5.0
 
 ### New features
-- "allowMaximize" property per pane [#10](https://github.com/IgniteUI/igniteui-dockmanager/issues/10)
+- `allowMaximize` property per pane [#10](https://github.com/IgniteUI/igniteui-dockmanager/issues/10)
 
 ### Bug fixes
 - Unpinned pane is closing automatically upon clicking on its content [#11](https://github.com/IgniteUI/igniteui-dockmanager/issues/11)
