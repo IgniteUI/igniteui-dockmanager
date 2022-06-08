@@ -2,6 +2,12 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.8.0
+
+### New features
+- Customize dock manager buttons
+- `layoutChange` event which fires when the layout updates [#17](https://github.com/IgniteUI/igniteui-dockmanager/issues/17)
+
 ## 1.7.0
 
 ### New features
