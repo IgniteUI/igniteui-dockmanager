@@ -2,6 +2,12 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.9.0
+
+### Bug fixes
+- Styles not applied [#33](https://github.com/IgniteUI/igniteui-dockmanager/issues/33)
+- Resize in RTL mode [#24](https://github.com/IgniteUI/igniteui-dockmanager/issues/24)
+
 ## 1.8.0
 
 ### New features
