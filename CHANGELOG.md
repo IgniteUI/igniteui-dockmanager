@@ -2,6 +2,17 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.10.0
+
+### New features
+-  Add `showHeaderIconOnHover` property
+
+### Bug fixes
+- Active pane is not retained on float/dock
+- Splitter styles are not applied [#36](https://github.com/IgniteUI/igniteui-dockmanager/issues/36)
+- `click` event on customized header buttons is not working [#37](https://github.com/IgniteUI/igniteui-dockmanager/issues/37)
+- Removed erroneous dock indicators while dragging over splitter
+
 ## 1.9.0
 
 ### Bug fixes
