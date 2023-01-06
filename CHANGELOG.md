@@ -2,6 +2,50 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.12.1
+
+### Enhancements
+- Include pane information in `splitterResizeStart` and `splitterResizeEnd` events
+- `IgcDockManagerComponent` is now exported as class
+
+### Bug fixes
+- Contents in slots with `unpinnedHeaderId` are not updated correctly [#53](https://github.com/IgniteUI/igniteui-dockmanager/issues/53)
+
+## 1.12.0
+
+### Bug fixes
+- Docking not working with allowFloating: false [#40](https://github.com/IgniteUI/igniteui-dockmanager/issues/40)
+- Flyout pane closing while active [#41](https://github.com/IgniteUI/igniteui-dockmanager/issues/41)
+- Focusable elements does not receive focus [#42](https://github.com/IgniteUI/igniteui-dockmanager/issues/42)
+- Navigating with pane navigator does not bring selected floating window on top [#48](https://github.com/IgniteUI/igniteui-dockmanager/issues/48)
+- Event `splitterResizeStart` can't be cancelled
+- Tabs context menu not positioning correctly
+
+## 1.11.3
+
+### New features
+- Add `contextMenuPosition` property
+- Add `selected` option for `tab-header-close-button` CSS part
+
+## 1.11.2
+
+### New features
+- Add `hovered` option for `tab-header-close-button` CSS part
+
+## 1.11.1
+
+### Bug fixes
+- CSS part fixes for `tab-header`
+
+## 1.11.0
+
+### New features
+- Add options for `showHeaderIconOnHover` property for different buttons
+- Add `horizontal` and `vertical` options for `splitter-handle` CSS part
+- Add `header-title` CSS part
+- Add `hover` option for `tab-header-close-button` CSS part in active/inactive states
+- Add `paneHeaderCloseButton` and `tabHeaderCloseButton` slots
+
 ## 1.10.0
 
 ### New features
