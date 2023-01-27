@@ -2,6 +2,21 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.12.3
+
+### Bug fixes
+- Error is thrown when dropping pane in a separate window
+
+## 1.12.2
+
+### Bug fixes
+- Docking indicator left/right arrows positions are reversed in RTL mode [#54](https://github.com/IgniteUI/igniteui-dockmanager/issues/54)
+- Context menu not positioning correctly
+- Missing overloads for `addEventListener` and `removeEventListener`
+
+### Enhancements
+- Add `tabs-more-menu-content` and `tabs-more-menu-item` CSS parts
+
 ## 1.12.1
 
 ### Enhancements
