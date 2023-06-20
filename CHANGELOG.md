@@ -2,6 +2,21 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.12.5
+
+### New features
+- Add `paneScroll` event [#51](https://github.com/IgniteUI/igniteui-dockmanager/issues/51) 
+
+### Bug fixes
+- ТabGroupPane: Pinning one of several unpinned panes results in all the panes getting pinned [#62](https://github.com/IgniteUI/igniteui-dockmanager/issues/62)
+- Context menu not positioning correctly in RTL mode
+- Active pane is not retained when docking with keyboard
+
+## 1.12.4
+
+### Bug fixes
+- Active pane incorrectly set when more than one Tab Group Pane is within a Floating Pane [#61](https://github.com/IgniteUI/igniteui-dockmanager/issues/61)
+
 ## 1.12.3
 
 ### Bug fixes
