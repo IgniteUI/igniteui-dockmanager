@@ -2,6 +2,18 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.13.0
+
+### New features
+- Add `focusPane` method [#58](https://github.com/IgniteUI/igniteui-dockmanager/issues/58), [#59](https://github.com/IgniteUI/igniteui-dockmanager/issues/59)
+- Add `allowInnerDock` and `acceptsInnerDock` properties [#67](https://github.com/IgniteUI/igniteui-dockmanager/issues/67)
+
+### Enhancements
+- Save pane maximized state in layout [#60](https://github.com/IgniteUI/igniteui-dockmanager/issues/60)
+
+### Bug fixes
+- Tab selection order is not preserved [#31](https://github.com/IgniteUI/igniteui-dockmanager/issues/31)
+
 ## 1.12.5
 
 ### New features
