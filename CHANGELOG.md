@@ -2,6 +2,21 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.14.0
+
+### New features
+
+- Add `showPaneHeaders` property [#65](https://github.com/IgniteUI/igniteui-dockmanager/issues/65)
+- Add `proximityDock` property [#66](https://github.com/IgniteUI/igniteui-dockmanager/issues/66)
+- Add `containedInBoundaries` property [#68](https://github.com/IgniteUI/igniteui-dockmanager/issues/68)
+
+### Enhancements
+- Add `contentId` of elements as CSS parts [#32](https://github.com/IgniteUI/igniteui-dockmanager/issues/32) 
+
+### Bug fixes
+- Maximizing and unpinning panes leads to unclickable panes [#72](https://github.com/IgniteUI/igniteui-dockmanager/issues/72)
+- Center dock is possible in a pane that has `acceptsInnerDock` to false if the `allowInnerDock` of `IgcDockManagerComponent` is set to false
+
 ## 1.13.0
 
 ### New features
