@@ -15,7 +15,7 @@ All notable changes for each version of this project will be documented in this 
 
 ### Bug fixes
 - Maximizing and unpinning panes leads to unclickable panes [#72](https://github.com/IgniteUI/igniteui-dockmanager/issues/72)
-- Center dock is possible in a pane that has `acceptsInnerDock` to false if the `allowInnerDock` of `IgcDockManagerComponent` is set to false
+- Center dock is possible in a pane that has `acceptsInnerDock` to true if the `allowInnerDock` of `IgcDockManagerComponent` is set to false
 
 ## 1.13.0
 
