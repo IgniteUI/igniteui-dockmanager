@@ -2,6 +2,11 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.14.1
+
+### Bug fixes
+- Proximity dock rtl check
+
 ## 1.14.0
 
 ### New features
