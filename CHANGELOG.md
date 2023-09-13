@@ -2,6 +2,16 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.14.2
+
+### Bug fixes
+- Constraining panels inside the dock manager boundaries with quick drags [#83](https://github.com/IgniteUI/igniteui-dockmanager/issues/83)
+
+## 1.14.1
+
+### Bug fixes
+- Proximity dock rtl check
+
 ## 1.14.0
 
 ### New features
