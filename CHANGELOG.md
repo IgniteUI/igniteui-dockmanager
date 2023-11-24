@@ -2,6 +2,12 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.14.3
+
+### Bug fixes
+- Dock manager throws errors with Vite-based builds [#88](https://github.com/IgniteUI/igniteui-dockmanager/issues/88)
+- Docking to edge in an empty root split pane throws errors [#89](https://github.com/IgniteUI/igniteui-dockmanager/issues/89)
+
 ## 1.14.2
 
 ### Bug fixes
