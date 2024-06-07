@@ -2,6 +2,11 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.14.4
+
+### Bug fixes
+- Applying isMaximized on split pane breaks maximizing [#95](https://github.com/IgniteUI/igniteui-dockmanager/issues/95)
+
 ## 1.14.3
 
 ### Bug fixes
