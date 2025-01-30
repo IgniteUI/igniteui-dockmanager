@@ -5,7 +5,7 @@ All notable changes for each version of this project will be documented in this 
 ## 1.16.0
 
 ### New features
-- Introduced a new docking behavior called `splitterDock`. It allows docking directly in a split pane by dragging a pane over one of its splitters. It can be switched on via the new `allowSplitterDock` property off the `IgcDockManagerComponent`.
+- Introduced a new docking behavior that allows docking directly in a split pane by dragging a pane over one of its splitters. It can be switched on via the new `allowSplitterDock` property of the `IgcDockManagerComponent`.
 - Introduced the `useFixedSize` property of Split Panes - a new resizing behavior where child panes are sized in pixels and can be resized beyond the viewport, allowing scrollable overflow within the container. 
 
 ### Bug fixes
