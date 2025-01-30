@@ -2,6 +2,38 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.16.0
+
+### New features
+- Introduced a new docking behavior that allows docking directly in a split pane by dragging a pane over one of its splitters. It can be switched on via the new `allowSplitterDock` property of the `IgcDockManagerComponent`.
+- Introduced the `useFixedSize` property of Split Panes - a new resizing behavior where child panes are sized in pixels and can be resized beyond the viewport, allowing scrollable overflow within the container. 
+
+### Bug fixes
+- The `showHeaderIconOnHover` property now defaults to `'none'` instead of `undefined` and has correct type
+
+## 1.15.1
+
+### Enhancements
+- Added custom elements manifest file
+
+## 1.15.0
+
+### New features
+
+- Added `closeBehavior` and `unpinBehavior` properties controlling whether the selected pane or all panes are closed/unpinned when clicking the respective button of a pane within a dockable TabGroup [#94](https://github.com/IgniteUI/igniteui-dockmanager/issues/94)
+
+### Enhancements
+- Added new CSS variables for styling the scrollbars
+
+### Bug fixes
+- TabGroupPane disappears when an unpinned pane is pinned [#84](https://github.com/IgniteUI/igniteui-dockmanager/issues/84)
+- Unpinned panes on the right and bottom edges cannot be resized via the splitter after being sized to minimum width/height [#90](https://github.com/IgniteUI/igniteui-dockmanager/issues/90)
+- Splitter cursor should be correct while resizing [#93](https://github.com/IgniteUI/igniteui-dockmanager/issues/93)
+- Uncaught TypeError: Cannot read properties of undefined (reading 'focus') [#96](https://github.com/IgniteUI/igniteui-dockmanager/issues/96)
+- Layout has more nesting levels then should [#97](https://github.com/IgniteUI/igniteui-dockmanager/issues/97)
+- Reopening a pane in IgcDockManager after closing a tab group pane does not show content of pane [#103](https://github.com/IgniteUI/igniteui-dockmanager/issues/103)
+- DockManager's maximized pane is not cleared when closing a maximized tabgroup pane
+
 ## 1.14.4
 
 ### Bug fixes
