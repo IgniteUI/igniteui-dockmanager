@@ -2,6 +2,11 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.16.1
+
+### Bug fixes
+- Dock manager is not loading if layout has no floating panes collection
+
 ## 1.16.0
 
 ### New features
