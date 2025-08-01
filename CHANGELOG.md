@@ -2,6 +2,19 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.17.0
+
+### New features
+- Adding two new Dock Manager properties:
+   - `useFixedSizeOnDock`, which specifies which docking orientations should apply the `FixedSize` sizing mode when split panes are dynamically created via docking.
+   - `allowRootDock`, which defaults to true, and enables or disables docking into the root-level container.
+- Adding automatic scrolling of the root container during drag-and-drop operations.
+  -  Introduced a new `autoScrollConfig` property for finer control over scroll behavior. 
+
+### Bug fixes
+- Placeholder panes are no longer present in Pane Navigator
+- Dark theme is now properly applied to scrollbars
+
 ## 1.16.1
 
 ### Bug fixes
