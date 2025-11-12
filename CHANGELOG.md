@@ -2,6 +2,38 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 1.18.0
+
+### New features
+- Introduced a new docking behavior that allows docking directly in a split pane by dragging a pane over one of its splitters. It can be switched on via the new `allowSplitterDock` property of the `IgcDockManagerComponent`.
+- Added edge docking functionality for docking panes to the edges of the dock manager. This docking mode is enabled when root docking is disabled via `allowRootDock` = false.
+- Added automatic scrolling when resizing panes with `useFixedSize` enabled, allowing resizing beyond viewport bounds.
+- Added visual feedback with a thin border highlighting the pane being resized. This can be customized via new CSS variables: `--igc-resize-target-border-color`, `--igc-resize-target-border-width`, and `--igc-resize-target-border-style`.
+- Added `enableDragCursor` property to provide cursor feedback on hover for interactive panes and tabs - when enabled, the cursor changes to pointer when panes/tabs can be dragged.
+- Exposed new CSS variables for splitter and resize handle customization:
+  - `--igc-splitter-thickness` (replaces `--igc-splitter-width`)
+  - `--igc-resize-handle-size` (replaces `--igc-resize-handle-height`)
+  - `--igc-resize-handle-thickness` (replaces `--igc-resize-handle-width`)
+- Improved joystick indicators to display on the visible portion of target panes.
+
+### Enhancements
+- Resize handle CSS variables renamed to be orientation-agnostic with backward compatibility maintained for old variable names.
+- Auto-scroll behavior now triggers when dragging panes near the edges of the root container.
+- Improved drop shadow positioning when docking in split panes with `useFixedSize` enabled.
+
+### Bug fixes
+- Removed obsolete start placeholder and splitter implementation.
+- Fixed auto-scroll triggering incorrectly when dragging mouse upward at the top of the container.
+- Fixed flyout behavior when clicking on splitters.
+- Fixed splitter resizing to work without requiring mouse movement.
+- Fixed splitter dragging preventing default browser behavior to avoid unwanted text selection and auto-scroll.
+- Fixed dock indicators and preview incorrectly showing when context menu is displayed.
+- Removed resize border from unpinned panes.
+- Fixed bottom dock preview positioning.
+- Fixed pane size calculation when `floatingWidth` or `floatingHeight` are undefined.
+- Fixed root dock preview display for edge indicators.
+- Fixed null reference errors during splitter docking.
+
 ## 1.17.0
 
 ### New features
