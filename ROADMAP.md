@@ -14,10 +14,11 @@
 
 ## Going down the road
 
-1. Maximize and minimize pane events are missing [#25](https://github.com/IgniteUI/igniteui-dockmanager/issues/25)
-2. Customize the tab or layout as per attachment [#20](https://github.com/IgniteUI/igniteui-dockmanager/issues/20)
-3. How to shrink tabItem size when more tabs are added (like google chrome tabs) [#21](https://github.com/IgniteUI/igniteui-dockmanager/issues/21)
-4. How to add custom icons to the stack (left and right side of the stack used to expand and collapse the panels) [#19](https://github.com/IgniteUI/igniteui-dockmanager/issues/19)
+1. **Minimum width and height for content panes and split panes** - Add ability to set minimum size constraints that are respected by splitter resize operations. See [FEATURE_SPEC_MIN_SIZE.md](FEATURE_SPEC_MIN_SIZE.md) for detailed specification.
+2. Maximize and minimize pane events are missing [#25](https://github.com/IgniteUI/igniteui-dockmanager/issues/25)
+3. Customize the tab or layout as per attachment [#20](https://github.com/IgniteUI/igniteui-dockmanager/issues/20)
+4. How to shrink tabItem size when more tabs are added (like google chrome tabs) [#21](https://github.com/IgniteUI/igniteui-dockmanager/issues/21)
+5. How to add custom icons to the stack (left and right side of the stack used to expand and collapse the panels) [#19](https://github.com/IgniteUI/igniteui-dockmanager/issues/19)
 
 # Delivered Features
 

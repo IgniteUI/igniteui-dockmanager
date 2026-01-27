@@ -34,6 +34,14 @@ Once the Dock Manager is imported, you can add it on the page:
 
 More information on how to use the Ignite UI Dock Manager Web Component can be found [here](https://infragistics.com/products/ignite-ui-web-components/web-components/components/dock-manager.html).
 
+## Feature Specifications
+
+For detailed specifications of upcoming features:
+
+- [Minimum Size Constraints for Panes](FEATURE_SPEC_MIN_SIZE.md) - Comprehensive specification for setting minimum width and height on content panes and split panes
+- [API Design for Minimum Size](API_DESIGN_MIN_SIZE.md) - TypeScript interfaces, usage examples, and framework-specific implementations
+- [Implementation Guide](IMPLEMENTATION_GUIDE.md) - Technical implementation guide for developers
+
 ## Browser Support
 
 ![chrome_48x48](https://user-images.githubusercontent.com/2188411/168109445-fbd7b217-35f9-44d1-8002-1eb97e39cdc6.png) | ![firefox_48x48](https://user-images.githubusercontent.com/2188411/168109465-e46305ee-f69f-4fa5-8f4a-14876f7fd3ca.png) | ![edge_48x48](https://user-images.githubusercontent.com/2188411/168109472-a730f8c0-3822-4ae6-9f54-785a66695245.png) | ![opera_48x48](https://user-images.githubusercontent.com/2188411/168109520-b6865a6c-b69f-44a4-9948-748d8afd687c.png) | ![safari_48x48](https://user-images.githubusercontent.com/2188411/168109527-6c58f2cf-7386-4b97-98b1-cfe0ab4e8626.png)
