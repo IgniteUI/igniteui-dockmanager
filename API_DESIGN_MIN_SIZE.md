@@ -381,13 +381,28 @@ window.addEventListener('resize', updateMinimumSizes);
 
 ```typescript
 // Helper function to get effective minimum size for a pane
-function getEffectiveMinSize(pane: IgcContentPane | IgcSplitPane, 
+function getEffectiveMinSize(pane: IgcContentPane | IgcSplitPane | IgcTabGroupPane | IgcDocumentHost, 
                             dockManager: IgcDockManagerComponent): IgcMinSizeConfig {
+  let defaultWidth: number | undefined;
+  let defaultHeight: number | undefined;
+  
+  // Determine the appropriate default based on pane type
+  switch (pane.type) {
+    case 'contentPane':
+      defaultWidth = dockManager.minPaneWidth;
+      defaultHeight = dockManager.minPaneHeight;
+      break;
+    case 'splitPane':
+    case 'tabGroupPane':
+    case 'documentHost':
+      defaultWidth = dockManager.minSplitPaneWidth;
+      defaultHeight = dockManager.minSplitPaneHeight;
+      break;
+  }
+  
   return {
-    width: pane.minWidth ?? 
-           (pane.type === 'contentPane' ? dockManager.minPaneWidth : dockManager.minSplitPaneWidth),
-    height: pane.minHeight ?? 
-            (pane.type === 'contentPane' ? dockManager.minPaneHeight : dockManager.minSplitPaneHeight)
+    width: pane.minWidth ?? defaultWidth,
+    height: pane.minHeight ?? defaultHeight
   };
 }
 

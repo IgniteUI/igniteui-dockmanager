@@ -118,6 +118,10 @@ export class IgcDockManager {
 **File: `utils/size-calculator.ts`**
 
 ```typescript
+// Constants for splitter dimensions
+const SPLITTER_WIDTH = 4;  // Horizontal splitter width in pixels
+const SPLITTER_HEIGHT = 4; // Vertical splitter height in pixels
+
 /**
  * Gets the effective minimum width for a pane
  */
@@ -555,20 +559,20 @@ private getCssVariableValue(variableName: string): string | null {
 describe('Minimum Size Constraints', () => {
   describe('Size Calculation Utilities', () => {
     it('should return pane-level minWidth over component default', () => {
-      const dockManager = { minPaneWidth: 100 };
-      const pane = { type: 'contentPane', minWidth: 200 };
+      const dockManager = { minPaneWidth: 100 } as IgcDockManagerComponent;
+      const pane = { type: 'contentPane', minWidth: 200 } as IgcContentPane;
       expect(getEffectiveMinWidth(pane, dockManager)).toBe(200);
     });
     
     it('should return component default when pane has no override', () => {
-      const dockManager = { minPaneWidth: 100 };
-      const pane = { type: 'contentPane' };
+      const dockManager = { minPaneWidth: 100 } as IgcDockManagerComponent;
+      const pane = { type: 'contentPane' } as IgcContentPane;
       expect(getEffectiveMinWidth(pane, dockManager)).toBe(100);
     });
     
     it('should return undefined when no constraints set', () => {
-      const dockManager = {};
-      const pane = { type: 'contentPane' };
+      const dockManager = {} as IgcDockManagerComponent;
+      const pane = { type: 'contentPane' } as IgcContentPane;
       expect(getEffectiveMinWidth(pane, dockManager)).toBeUndefined();
     });
   });
