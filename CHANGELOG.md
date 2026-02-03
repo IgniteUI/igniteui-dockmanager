@@ -2,6 +2,50 @@
 
 All notable changes for each version of this project will be documented in this file.
 
+## 2.0.0
+
+### Breaking Changes
+- Localization resources are no longer bundled directly with this package. The previously exported resource string objects:
+  - `IgcDockManagerResourceStringsEN`
+  - `IgcDockManagerResourceStringsES`
+  - `IgcDockManagerResourceStringsJP`
+  - `IgcDockManagerResourceStringsKO`
+
+  have been removed from this package and moved into dedicated localization packages (see the README "Localization" section for details). The corresponding resource string objects in the new localization packages no longer use the `Igc` prefix.
+- Applications that relied on these exports must now:
+  - Install the new localization package(s), and
+  - Update imports to use the resource strings from the new packages.
+
+### Major Changes
+- Migrated the dock manager component from Stencil to Lit framework. This is an internal architectural change that maintains full API compatibility with previous versions.
+
+### Enhancements
+- Refactored TypeScript enums to string union types for better type safety and simpler codebase structure. Const objects are provided for backward compatibility.
+  For example, the following:
+  ```ts
+  const layout1: IgcDockManagerLayout = {
+    rootPane: {
+      type: IgcDockManagerPaneType.splitPane,
+      orientation: IgcSplitPaneOrientation.horizontal,
+      panes: [
+        // ...
+      ]
+    }
+  };
+  ```
+  Can now also be written as:
+  ```ts
+  const layout1: IgcDockManagerLayout = {
+    rootPane: {
+      type: 'splitPane',
+      orientation: 'horizontal',
+      panes: [
+        // ...
+      ]
+    }
+  };
+  ```
+
 ## 1.18.0
 
 ### New features
