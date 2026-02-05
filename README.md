@@ -7,6 +7,9 @@
 
 ![DockManagerDemo](https://user-images.githubusercontent.com/11231206/209106239-a435998a-6c01-45bf-adc3-030dbf39f2ae.gif)
 
+> [!IMPORTANT]
+> **Version 2.0+ Notice:** The Dock Manager has been migrated from Stencil to **Lit**. This is an internal architectural change that maintains full API compatibility with previous versions. For applications using version 1.x, please see the migration guide below.
+
 ## NPM Package
 
 You can include the Ignite UI Dock Manager Web Component in your project as a dependency using the NPM package.
@@ -17,7 +20,19 @@ npm install igniteui-dockmanager --save
 
 ## Usage
 
-In order to use the Ignite UI Dock Manager Web Component it is necessary to import and call the `defineCustomElements()` function:
+### Lit Version (v2.0+)
+
+In the new Lit-based version, you simply import the component and call the `defineComponents()` function:
+
+```ts
+import { defineComponents, IgcDockManagerComponent } from 'igniteui-dockmanager';
+
+defineComponents(IgcDockManagerComponent);
+```
+
+### Legacy Stencil Version (v1.x)
+
+If you are using version 1.x, it is necessary to import and call the `defineCustomElements()` function:
 
 ```ts
 import { defineCustomElements } from 'igniteui-dockmanager/loader';
@@ -25,11 +40,28 @@ import { defineCustomElements } from 'igniteui-dockmanager/loader';
 defineCustomElements();
 ```
 
+### Adding to the Page
+
 Once the Dock Manager is imported, you can add it on the page:
 
 ```html
 <igc-dockmanager id="dockManager">
 </igc-dockmanager>
+```
+
+### Localization
+
+Starting with version 2.0, localization resources have been moved to a separate package. To localize the Dock Manager strings, install the peer dependency `igniteui-i18n-resources` and register a language bundle with `igniteui-i18n-core`:
+
+```bash
+npm install igniteui-i18n-resources --save
+```
+
+```ts
+import { registerI18n } from 'igniteui-i18n-core';
+import { DockManagerResourceStringsES } from 'igniteui-i18n-resources';
+
+registerI18n(DockManagerResourceStringsES, 'es');
 ```
 
 More information on how to use the Ignite UI Dock Manager Web Component can be found [here](https://infragistics.com/products/ignite-ui-web-components/web-components/components/dock-manager.html).
