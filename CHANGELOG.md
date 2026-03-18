@@ -55,6 +55,16 @@ All notable changes for each version of this project will be documented in this 
     }
   };
   ```
+  
+## 1.19.0
+
+### New features
+- Added `paneFlyoutToggle` event that fires when an unpinned pane's flyout opens or closes, allowing developers to track when unpinned pane content becomes visible or hidden.
+- Added `minResizeWidth` and `minResizeHeight` properties to `IgcContentPane`, `IgcSplitPane`, and `IgcTabGroupPane` to constrain resizing behavior during resize operations. These properties set minimum size constraints (in pixels, default: 42) that are enforced when a user interacts with splitters or resizes floating panes. **Note:** These constraints only apply during active resize operations and do not prevent docking into smaller containers or affect container sizing during docking operations.
+- The `layoutChange` event now includes the updated layout in its `detail.layout` property.
+
+### Bug Fixes
+- The hover area for showing pane headers when `showPaneHeaders` is set to `onHoverOnly` now correctly accounts for the actual pane header height, including custom heights set via `::part(pane-header)` styles. Note that when customizing the header height, the `min-height` property should also be overridden, as it defaults to 40px to ensure header elements are properly displayed.
 
 ## 1.18.0
 
